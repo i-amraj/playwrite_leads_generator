@@ -1,0 +1,139 @@
+{
+    "session_id": "dea0abdb7e1ee20e",
+    "query": "gym in Ashok Nagar",
+    "keyword": "gym",
+    "location": "Ashok Nagar",
+    "country": "India",
+    "created_at": "2026-01-24 09:49:01",
+    "last_card": {
+        "name": "Fitness ONE Gym Ashok Nagar",
+        "place_id": "0x390ce5ebb60173ad:0",
+        "index": 10
+    },
+    "total_extracted": 10,
+    "batches_completed": 1,
+    "seen_hashes": [
+        "37d82362eb450975621c1c026a767b83",
+        "ba644b430f0bccf0fa312a4eebfb8b1f",
+        "0e59f8e32cc5f76800c722053638ba29",
+        "5d9601fbf96179a9815a401231cd244a",
+        "4ea5e93543709434b26c35a4cb8b72db",
+        "61d0c9a57841027a7f605bec43388b8f",
+        "2685d6c1fbc7f38307c4ada494ec8c5a",
+        "562150e4cd0113ea0a0c2aa5548fa442",
+        "96aaca0d0755dc869b7cdb1a55fdfc0c",
+        "6ec0556876d98cbd07ce4f2e7b84a4ee"
+    ],
+    "all_data": [
+        {
+            "index": 0,
+            "name": "The Times Fitness",
+            "rating": "4.9",
+            "review_count": "602",
+            "category": "Gym",
+            "address": "Kiran Collage Chauraha, Katra Banda, Banda, Uttar Pradesh 210001",
+            "phone": "096489 98828",
+            "website": "",
+            "place_id": "0x399ccf0c1d620377:0"
+        },
+        {
+            "index": 1,
+            "name": "Neo Gym Banda",
+            "rating": "4.3",
+            "review_count": "245",
+            "category": "Gym",
+            "address": "near sankat mochan Mandie, Swaraj Colony, Civil Lines, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399ccf0c1d620377:0"
+        },
+        {
+            "index": 2,
+            "name": "Natraj Fitness",
+            "rating": "4.8",
+            "review_count": "193",
+            "category": "Gym",
+            "address": "Natraj music, Kalu Kuwana, Banda, Uttar Pradesh 210001",
+            "phone": "089486 28828",
+            "website": "https:\/\/natraj-fitness.b12sites.com\/",
+            "place_id": "0x399ccefda970dcab:0"
+        },
+        {
+            "index": 3,
+            "name": "Hammer Head Gym & Nutrition Shop",
+            "rating": "4.3",
+            "review_count": "97",
+            "category": "Gym",
+            "address": "Gali No. 2, near Dr. ND Sharma, Swaraj Colony, Banda, Uttar Pradesh 210001",
+            "phone": "063871 27898",
+            "website": "",
+            "place_id": "0x399ccfe38ee589a9:0"
+        },
+        {
+            "index": 4,
+            "name": "Fitness Factory Unisex Gym",
+            "rating": "4.9",
+            "review_count": "198",
+            "category": "Fitness center",
+            "address": "bypass, Palhari, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399ccf646003f72b:0"
+        },
+        {
+            "index": 5,
+            "name": "SLAM Lifestyle And Fitness Studio (Ashok Nagar)",
+            "rating": "4.6",
+            "review_count": "1048",
+            "category": "Gym",
+            "address": "New No 71\/1&3, Old No 13\/1&3, 2nd Floor, 1st St, Indira Colony, Ashok Nagar, Chennai, Tamil Nadu 600083",
+            "phone": "089258 31816",
+            "website": "",
+            "place_id": "0x399cc912f0a052f3:0"
+        },
+        {
+            "index": 6,
+            "name": "Skale Fitness and Lifestyle Studios Ashok Nagar",
+            "rating": "4.6",
+            "review_count": "112",
+            "category": "Gym",
+            "address": "26R6+787, 18th Ave, Sector 10, Sector 13, Ashok Nagar, Chennai, Tamil Nadu 600083",
+            "phone": "",
+            "website": "https:\/\/skalefitness.com\/",
+            "place_id": "0x3a52670868bf9123:0"
+        },
+        {
+            "index": 7,
+            "name": "V2 Health Studio",
+            "rating": "4.6",
+            "review_count": "443",
+            "category": "Gym",
+            "address": "23, 35, 10th Ave, Sarvamangala Colony, Manthope Colony, Ashok Nagar, Chennai, Tamil Nadu 600083",
+            "phone": "044 3505 0412",
+            "website": "https:\/\/v2healthstudio.com\/",
+            "place_id": "0x3a5267000a217863:0"
+        },
+        {
+            "index": 8,
+            "name": "Ignite Fitness Unisex Gym",
+            "rating": "4.9",
+            "review_count": "19",
+            "category": "Gym",
+            "address": "2nd Floor, RS Tower, B-1266\/67, opposite Metro Pillor. 156, Block B, Ashok Nagar Extension, New Ashok Nagar, New Delhi, Delhi, 110096",
+            "phone": "078408 20574",
+            "website": "",
+            "place_id": "0x3a52671e01ba18dd:0"
+        },
+        {
+            "index": 9,
+            "name": "Fitness ONE Gym Ashok Nagar",
+            "rating": "3.9",
+            "review_count": "257",
+            "category": "Gym",
+            "address": "1st Avenue, 52, Jawaharlal Nehru Salai, above Subway Ashok Nagar, Sector 10, Sector 13, Ashok Nagar, Chennai, Tamil Nadu 600083",
+            "phone": "091765 92266",
+            "website": "",
+            "place_id": "0x390ce5ebb60173ad:0"
+        }
+    ]
+}

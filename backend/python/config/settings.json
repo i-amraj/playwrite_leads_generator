@@ -1,0 +1,8 @@
+{
+    "headless": true,
+    "timeout": 60000,
+    "max_retries": 3,
+    "delay_min": 1000,
+    "delay_max": 3000,
+    "user_agent_rotate": true
+}

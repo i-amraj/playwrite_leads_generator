@@ -1,0 +1,162 @@
+/* 
+ * Raj Leads Generator - Enterprise Design Tokens 
+ * Version 2.0 (SaaS Blueprint)
+ */
+
+:root {
+    /* 
+     * 1. Color Palette (Semantic)
+     * Default Theme: Dark Mode
+     */
+    --primary: #8b5cf6;
+    /* Violet 500 */
+    --primary-hover: #7c3aed;
+    /* Violet 600 */
+    --primary-light: #a78bfa;
+    /* Violet 400 */
+    --primary-subtle: rgba(139, 92, 246, 0.1);
+
+    --secondary: #10b981;
+    /* Emerald 500 */
+    --secondary-hover: #059669;
+    /* Emerald 600 */
+
+    --danger: #ef4444;
+    /* Red 500 */
+    --danger-hover: #dc2626;
+    /* Red 600 */
+
+    --warning: #f59e0b;
+    /* Amber 500 */
+    --info: #3b82f6;
+    /* Blue 500 */
+
+    /* Backgrounds */
+    --bg-main: #020617;
+    /* Slate 950 (Deep Space) */
+    --bg-sidebar: #0f172a;
+    /* Slate 900 */
+    --bg-card: #1e293b;
+    /* Slate 800 */
+    --bg-hover: #334155;
+    /* Slate 700 */
+    --bg-input: #020617;
+    /* Slate 950 */
+
+    /* Typography Colors */
+    --text-main: #f8fafc;
+    /* Slate 50 */
+    --text-muted: #94a3b8;
+    /* Slate 400 */
+    --text-inverse: #0f172a;
+
+    /* Borders & Glass */
+    --border: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.15);
+    --glass: rgba(15, 23, 42, 0.7);
+    --glass-blur: 16px;
+
+    /* 
+     * 2. Typography System
+     * Font: 'Plus Jakarta Sans', sans-serif;
+     */
+    --font-primary: 'Plus Jakarta Sans', 'Inter', sans-serif;
+
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 1.875rem;
+    /* 30px */
+
+    /* 
+     * 3. Spacing & Sizing 
+     */
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 72px;
+    --header-height: 64px;
+
+    /* 
+     * 4. Border Radius (Strict Scale) 
+     */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    /* Inputs */
+    --radius-lg: 12px;
+    /* Buttons */
+    --radius-xl: 16px;
+    /* Cards */
+    --radius-full: 9999px;
+
+    /* 
+     * 5. Elevation (Shadows) 
+     */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+
+    /* 
+     * 6. Motion (Cubic Bezier) 
+     */
+    --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 350ms;
+}
+
+/* 
+ * Light Theme Override 
+ * Triggered by [data-theme="light"] on <html>
+ */
+[data-theme="light"] {
+    /* Colors */
+    --primary: #6366f1;
+    /* Indigo 500 */
+    --primary-hover: #4f46e5;
+    /* Indigo 600 */
+    --primary-light: #818cf8;
+    /* Indigo 400 */
+    --primary-subtle: rgba(99, 102, 241, 0.1);
+
+    /* Backgrounds */
+    --bg-main: #f8fafc;
+    /* Slate 50 */
+    --bg-sidebar: #ffffff;
+    /* White */
+    --bg-card: #ffffff;
+    /* White */
+    --bg-hover: #f1f5f9;
+    /* Slate 100 */
+    --bg-input: #ffffff;
+    /* White */
+
+    /* Typography Colors */
+    --text-main: #0f172a;
+    /* Slate 900 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+    --text-inverse: #ffffff;
+
+    /* Borders & Glass */
+    --border: #e2e8f0;
+    /* Slate 200 */
+    --border-hover: #cbd5e0;
+    /* Slate 300 */
+    --glass: rgba(255, 255, 255, 0.8);
+
+    /* Shadows (Softer for Light Mode) */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

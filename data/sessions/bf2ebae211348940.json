@@ -1,0 +1,55 @@
+{
+    "session_id": "bf2ebae211348940",
+    "query": "gym in lucknow",
+    "keyword": "gym",
+    "location": "lucknow",
+    "country": "india",
+    "created_at": "2026-01-24 08:17:12",
+    "last_card": {
+        "name": "Anytime Fitness",
+        "place_id": "0x399be5d2cff43d8f:0",
+        "index": 3
+    },
+    "total_extracted": 3,
+    "batches_completed": 1,
+    "seen_hashes": [
+        "f857e2fee46f444262baca5d99c2c3fc",
+        "b7ef6f86e2f99ef0dd2a3dacdec514ab",
+        "a2ea2f8a5064f64b4bc78c6ee6207d60"
+    ],
+    "all_data": [
+        {
+            "index": 0,
+            "name": "Neo Fitnes - Best Gym in Lucknow | Best Fitness Centre in Lucknow",
+            "rating": "4.3",
+            "review_count": "",
+            "category": "Gym",
+            "address": "Plot No.5, STW Infinity, 6th Floor, Sector E, Aliganj, Lucknow, Uttar Pradesh 226024",
+            "phone": "1800 309 5609",
+            "website": "https:\/\/neofitnes.com\/",
+            "place_id": "0x399957fbe40b372f:0"
+        },
+        {
+            "index": 1,
+            "name": "Healthism 24x7 - Biggest Gym In Lucknow",
+            "rating": "4.6",
+            "review_count": "",
+            "category": "Gym",
+            "address": "First Floor, Skyline Plaza-3, Golf City, Sector B Ansal API, Lucknow, Ahmamau, Uttar Pradesh 226030",
+            "phone": "081879 06088",
+            "website": "http:\/\/healthism.in\/",
+            "place_id": "0x399957fbe40b372f:0"
+        },
+        {
+            "index": 2,
+            "name": "Anytime Fitness",
+            "rating": "4.5",
+            "review_count": "",
+            "category": "Gym",
+            "address": "3\/296, Vishal Khand - 3, Vishal Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010",
+            "phone": "070809 03539",
+            "website": "https:\/\/www.anytimefitness.co.in\/find-gym\/",
+            "place_id": "0x399be5d2cff43d8f:0"
+        }
+    ]
+}

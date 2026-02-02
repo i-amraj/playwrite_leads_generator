@@ -1,0 +1,130 @@
+{
+    "session_id": "904fcd16f913fa243cc272a6be7ad6dd",
+    "query": "gym in Sindhuli, Bagmati Province",
+    "keyword": "gym",
+    "location": "Sindhuli, Bagmati Province",
+    "country": "Nepal",
+    "sales_person": "akash jaiswal",
+    "sales_team": "sales team a",
+    "created_at": "2026-01-24 11:44:46",
+    "last_card": {
+        "name": "VIDYA KRISHNA GYM",
+        "place_id": "0x39eb8d00547bbdb5:0",
+        "index": 9
+    },
+    "total_extracted": 9,
+    "total_found_approx": 9,
+    "batches_completed": 1,
+    "seen_hashes": [
+        "ec4d83fa21c3c5103077454a5040ee6e",
+        "46f33c0e7e7507ed52db2b462129c703",
+        "37d82362eb450975621c1c026a767b83",
+        "0e59f8e32cc5f76800c722053638ba29",
+        "b233423fd70f0decc725cec2614f0934",
+        "2720cdbe579026d89e305de177cd1b6c",
+        "925c96d6b6cddc912792a9048683da74",
+        "abe3cca1756accce771cb0a1e30d6a0f",
+        "a31d87753022fb3733cf58dcc9fb3b17"
+    ],
+    "all_data": [
+        {
+            "index": 0,
+            "name": "Fitholo The Fitness Club",
+            "rating": "4.9",
+            "review_count": "123",
+            "category": "Gym",
+            "address": "Diggi Chauraha, Railway Station Path, opposite Hanuman Garhi, Gular Naka, Banda, Uttar Pradesh 210001",
+            "phone": "+9777007474986",
+            "website": "",
+            "place_id": "0x399ccff670350047:0"
+        },
+        {
+            "index": 1,
+            "name": "SHELL FITNESS CARE",
+            "rating": "4.8",
+            "review_count": "53",
+            "category": "Gym\nOpen",
+            "address": "Aliganj, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "https:\/\/instagram.com\/shell_fitnesss_?utm_medium=copy_link",
+            "place_id": "0x399ccff670350047:0"
+        },
+        {
+            "index": 2,
+            "name": "The Times Fitness",
+            "rating": "4.9",
+            "review_count": "602",
+            "category": "Gym",
+            "address": "Kiran Collage Chauraha, Katra Banda, Banda, Uttar Pradesh 210001",
+            "phone": "+9779648998828",
+            "website": "",
+            "place_id": "0x399ccf2fefa3dd1f:0"
+        },
+        {
+            "index": 3,
+            "name": "Natraj Fitness",
+            "rating": "4.8",
+            "review_count": "193",
+            "category": "Gym",
+            "address": "Natraj music, Kalu Kuwana, Banda, Uttar Pradesh 210001",
+            "phone": "+9778948628828",
+            "website": "https:\/\/natraj-fitness.b12sites.com\/",
+            "place_id": "0x399ccf0c1d620377:0"
+        },
+        {
+            "index": 4,
+            "name": "BANDA FITNESS CLUB",
+            "rating": "4.8",
+            "review_count": "47",
+            "category": "Gym",
+            "address": "Rishi Paint And Sanitary, Kalu Kuan Rd, Vishwa Vihar Colony, Ladaka Purwa, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "https:\/\/www.instagram.com\/banda_fitness_club?igsh=MWd3dndqNmxhc2l3MA==",
+            "place_id": "0x399ccfe38ee589a9:0"
+        },
+        {
+            "index": 5,
+            "name": "Shivam Fitness",
+            "rating": "5.0",
+            "review_count": "14",
+            "category": "Gym",
+            "address": "Dalmeel ke pass, Baberu Rd, Gayatri Nagar, Banda, Uttar Pradesh 210001",
+            "phone": "+9778957831269",
+            "website": "",
+            "place_id": "0x399ccf499ab03bf9:0"
+        },
+        {
+            "index": 6,
+            "name": "Sk fitness club",
+            "rating": "4.8",
+            "review_count": "6",
+            "category": "Gym",
+            "address": "C9FQ+XVJ, NH35, Barokhar Khurd, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399ccfbc1ac33067:0"
+        },
+        {
+            "index": 7,
+            "name": "Sindhuli Fitness Center",
+            "rating": "5.0",
+            "review_count": "1",
+            "category": "Gym\nClosed",
+            "address": "Kamalamai 45900, Nepal",
+            "phone": "+9779844215226",
+            "website": "",
+            "place_id": "0x399ccbb33b4cc7b1:0"
+        },
+        {
+            "index": 8,
+            "name": "VIDYA KRISHNA GYM",
+            "rating": "3.4",
+            "review_count": "12",
+            "category": "Gym",
+            "address": "Road, Bhagwati Nagar, Terahi, Tindwari, Uttar Pradesh 210128",
+            "phone": "",
+            "website": "",
+            "place_id": "0x39eb8d00547bbdb5:0"
+        }
+    ]
+}

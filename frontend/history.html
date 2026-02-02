@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search History | Raj Leads Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-bolt gradient-text"></i>
+                    <span class="logo-text">Raj Leads <span class="pro">Generator</span></span>
+                </div>
+                <div class="sidebar-actions" style="display: flex; gap: 0.5rem;">
+                    <button id="themeToggle" class="sidebar-toggle" title="Switch Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="sidebarToggle" class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-search"></i>
+                    <span>Search Leads</span>
+                </a>
+                <a href="history.html" class="nav-item active">
+                    <i class="fas fa-history"></i>
+                    <span>Search History</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <i class="fas fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Raj&background=6366f1&color=fff" alt="User">
+                    <span>Raj (Admin)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Search History</h1>
+                    <p class="subtitle">View and manage your previous lead generation sessions</p>
+                </div>
+            </header>
+
+            <section class="history-section">
+                <div class="glassy">
+                    <div style="text-align: center; padding: 4rem 2rem;">
+                        <i class="fas fa-folder-open"
+                            style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                        <h3>Internal History Storage</h3>
+                        <p style="color: var(--text-muted);">History feature is being integrated with backend. Your past
+                            sessions will appear here soon.</p>
+                        <br>
+                        <a href="index.html" class="btn btn-primary">Start New Search</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/command.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/history.js"></script>
+</body>
+
+</html>

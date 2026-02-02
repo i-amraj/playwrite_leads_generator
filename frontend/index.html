@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadGen Pro | Google Maps Business Scraper</title>
+    <meta name="description"
+        content="Premium Google Maps Business Lead Generator. Extract names, ratings, phones, and websites with ease.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-bolt gradient-text"></i>
+                    <span class="logo-text">Raj Leads <span class="pro">Generator</span></span>
+                </div>
+                <div class="sidebar-actions" style="display: flex; gap: 0.5rem;">
+                    <button id="themeToggle" class="sidebar-toggle" title="Switch Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="sidebarToggle" class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item active">
+                    <i class="fas fa-search"></i>
+                    <span>Search Leads</span>
+                </a>
+                <a href="history.html" class="nav-item">
+                    <i class="fas fa-history"></i>
+                    <span>Search History</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <i class="fas fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Raj&background=6366f1&color=fff" alt="User">
+                    <span>Raj (Admin)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Discover New Leads</h1>
+                    <p class="subtitle">Search local businesses from Google Maps in real-time</p>
+                </div>
+            </header>
+
+            <section class="search-section">
+                <div class="search-card glassy">
+                    <form id="searchForm" class="search-form">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="country"><i class="fas fa-globe"></i> Country</label>
+                                <select id="country" name="country">
+                                    <option value="India">India</option>
+                                    <option value="Nepal">Nepal</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="state"><i class="fas fa-map"></i> State</label>
+                                <select id="state" name="state" disabled>
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="district"><i class="fas fa-city"></i> City</label>
+                                <select id="district" name="district" disabled>
+                                    <option value="">Select City</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="city"><i class="fas fa-map-location-dot"></i> Area <span
+                                        style="color:#6b7280;font-size:0.8em">(Optional)</span></label>
+                                <select id="city" name="city" disabled>
+                                    <option value="">Select Area (Optional)</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="keyword"><i class="fas fa-briefcase"></i> Business Type</label>
+                                <input type="text" id="keyword" name="keyword" placeholder="e.g. Gym, Restaurant, Hotel"
+                                    required>
+                            </div>
+
+                            <!-- Sales Info Fields -->
+                            <div class="input-group">
+                                <label for="salesPerson"><i class="fas fa-user-tie"></i> Sales Person</label>
+                                <input type="text" id="salesPerson" name="salesPerson" placeholder="Enter Name"
+                                    required>
+                            </div>
+                            <div class="input-group">
+                                <label for="salesTeam"><i class="fas fa-users"></i> Sales Team</label>
+                                <input type="text" id="salesTeam" name="salesTeam" placeholder="Enter Team Name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" id="searchBtn" class="btn btn-primary">
+                                <i class="fas fa-magnifying-glass"></i> Start Searching
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-rotate-left"></i> Reset
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Empty State -->
+            <section id="emptyState" class="empty-state">
+                <div class="empty-state-icon">
+                    <i class="fas fa-search-location"></i>
+                </div>
+                <h3>Start Your Lead Hunt</h3>
+                <p>Select a location and business type to discover thousands of potential clients in seconds.</p>
+            </section>
+
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <div class="results-info">
+                        <h2>Search Results</h2>
+                        <p>
+                            <strong><span id="extractedCount">0</span></strong> extracted of
+                            <strong><span id="totalAvailable">0</span></strong> total results in
+                            <span id="currentLocation">Location</span>
+                        </p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="results-actions">
+                        <button id="exportBtn" class="btn btn-success btn-sm" disabled>
+                            <i class="fas fa-file-excel"></i> Export Excel
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th width="50">#</th>
+                                <th>Business Name</th>
+                                <th>Category</th>
+                                <th>Rating</th>
+                                <th>Phone Number</th>
+                                <th>Website</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsBody">
+                            <!-- Results will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-footer">
+                    <div id="paginationStatus" class="pagination-status hidden">
+                        <i class="fas fa-spinner fa-spin"></i> Loading more records...
+                        <span id="countdown"></span>
+                    </div>
+                    <button id="getMoreBtn" class="btn btn-secondary" disabled>
+                        <i class="fas fa-plus"></i> Get More Results
+                    </button>
+                </div>
+            </section>
+
+            <!-- Live Scraping Panel (Terminal-Style) -->
+            <div id="loadingOverlay" class="scraping-panel hidden">
+                <div class="scraping-content">
+                    <div class="scraping-header">
+                        <div class="scraping-title">
+                            <i class="fas fa-terminal"></i>
+                            <h3>Live Scraping</h3>
+                        </div>
+                        <div class="scraping-status" id="scrapingStatus">
+                            <span class="status-dot"></span>
+                            <span id="statusText">Initializing...</span>
+                        </div>
+                    </div>
+
+                    <div class="scraping-info">
+                        <div class="info-item">
+                            <i class="fas fa-search"></i>
+                            <span id="scrapingQuery">--</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="scrapingTime">00:00</span>
+                        </div>
+                    </div>
+
+                    <!-- Terminal Log -->
+                    <div class="terminal-log" id="terminalLog">
+                        <div class="log-line">[SYSTEM] Ready to scrape...</div>
+                    </div>
+
+                    <!-- Live Stats -->
+                    <div class="live-stats">
+                        <div class="stat-box">
+                            <span class="stat-value" id="liveExtracted">0</span>
+                            <span class="stat-label">Extracted</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="liveTotal">--</span>
+                            <span class="stat-label">Available</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="liveDelay">--</span>
+                            <span class="stat-label">Next In</span>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="scraping-progress">
+                        <div class="scraping-progress-bar" id="scrapingProgressBar"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/command.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/api_client.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+# Common ignores
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+.env
+.flaskenv
+
+# Project specific
+data/*.csv
+data/*.json
+!data/sample_leads_import.csv
+php_server.log
+testing/screenshots/
+testing/videos/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Credentials
+*.pem
+*.key
+auth_token.json
+secrets.json

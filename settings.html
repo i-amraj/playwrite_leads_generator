@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Raj Leads Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-bolt gradient-text"></i>
+                    <span class="logo-text">Raj Leads <span class="pro">Generator</span></span>
+                </div>
+                <div class="sidebar-actions" style="display: flex; gap: 0.5rem;">
+                    <button id="themeToggle" class="sidebar-toggle" title="Switch Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="sidebarToggle" class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-search"></i>
+                    <span>Search Leads</span>
+                </a>
+                <a href="history.html" class="nav-item">
+                    <i class="fas fa-history"></i>
+                    <span>Search History</span>
+                </a>
+                <a href="settings.html" class="nav-item active">
+                    <i class="fas fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Raj&background=6366f1&color=fff" alt="User">
+                    <span>Raj (Admin)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Configuration & Settings</h1>
+                    <p class="subtitle">Customize scraper behavior and application preferences</p>
+                </div>
+            </header>
+
+            <section class="settings-section">
+                <div class="glassy">
+                    <h3 style="margin-bottom: 2rem;"><i class="fas fa-sliders" style="color: var(--primary);"></i>
+                        Scraper Configuration</h3>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label>Default Delay (Seconds)</label>
+                            <input type="number" value="5" min="2" max="30">
+                        </div>
+                        <div class="input-group">
+                            <label>Batch Size</label>
+                            <input type="number" value="10" min="5" max="50">
+                        </div>
+                        <div class="input-group">
+                            <label>Export Format</label>
+                            <select>
+                                <option>Excel (.xlsx)</option>
+                                <option>CSV (.csv)</option>
+                                <option>JSON (.json)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary">Save Settings</button>
+                    </div>
+                </div>
+
+                <div class="glassy" style="margin-top: 2rem;">
+                    <h3 style="margin-bottom: 2rem;"><i class="fas fa-user-shield" style="color: var(--secondary);"></i>
+                        Admin Preferences</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Manage application
+                        access and branding settings.</p>
+                    <div class="input-group" style="margin-bottom: 1.5rem;">
+                        <label>Application Name</label>
+                        <input type="text" value="Raj Leads Generator">
+                    </div>
+                    <button class="btn btn-secondary">Update Profile</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/command.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+
+</html>

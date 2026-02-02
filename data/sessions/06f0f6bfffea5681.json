@@ -1,0 +1,129 @@
+{
+    "session_id": "06f0f6bfffea5681",
+    "query": "gym in Marin Rural Municipality, Sindhuli, Bagmati Province",
+    "keyword": "gym",
+    "location": "Marin Rural Municipality, Sindhuli, Bagmati Province",
+    "country": "Nepal",
+    "sales_person": "Akash jaiswal",
+    "sales_team": "team akash",
+    "created_at": "2026-01-24 11:06:55",
+    "last_card": {
+        "name": "Powergym & Fitness Center",
+        "place_id": "0x39eb8d00547bbdb5:0",
+        "index": 9
+    },
+    "total_extracted": 9,
+    "batches_completed": 1,
+    "seen_hashes": [
+        "37d82362eb450975621c1c026a767b83",
+        "0e59f8e32cc5f76800c722053638ba29",
+        "ba644b430f0bccf0fa312a4eebfb8b1f",
+        "b233423fd70f0decc725cec2614f0934",
+        "4ea5e93543709434b26c35a4cb8b72db",
+        "a31d87753022fb3733cf58dcc9fb3b17",
+        "5d6ab2e1fafae245d50e2cec07217377",
+        "abe3cca1756accce771cb0a1e30d6a0f",
+        "f6700a7b770a9b011f73a29cfb4ece65"
+    ],
+    "all_data": [
+        {
+            "index": 0,
+            "name": "The Times Fitness",
+            "rating": "4.9",
+            "review_count": "602",
+            "category": "Gym",
+            "address": "Kiran Collage Chauraha, Katra Banda, Banda, Uttar Pradesh 210001",
+            "phone": "+9779648998828",
+            "website": "",
+            "place_id": "0x399ccf0c1d620377:0"
+        },
+        {
+            "index": 1,
+            "name": "Natraj Fitness",
+            "rating": "4.8",
+            "review_count": "193",
+            "category": "Gym",
+            "address": "Natraj music, Kalu Kuwana, Banda, Uttar Pradesh 210001",
+            "phone": "+9778948628828",
+            "website": "https:\/\/natraj-fitness.b12sites.com\/",
+            "place_id": "0x399ccf0c1d620377:0"
+        },
+        {
+            "index": 2,
+            "name": "Neo Gym Banda",
+            "rating": "4.3",
+            "review_count": "245",
+            "category": "Gym",
+            "address": "near sankat mochan Mandie, Swaraj Colony, Civil Lines, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399ccfe38ee589a9:0"
+        },
+        {
+            "index": 3,
+            "name": "BANDA FITNESS CLUB",
+            "rating": "4.8",
+            "review_count": "47",
+            "category": "Gym",
+            "address": "Rishi Paint And Sanitary, Kalu Kuan Rd, Vishwa Vihar Colony, Ladaka Purwa, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "https:\/\/www.instagram.com\/banda_fitness_club?igsh=MWd3dndqNmxhc2l3MA==",
+            "place_id": "0x399ccefda970dcab:0"
+        },
+        {
+            "index": 4,
+            "name": "Fitness Factory Unisex Gym",
+            "rating": "4.9",
+            "review_count": "198",
+            "category": "Fitness center",
+            "address": "bypass, Palhari, Banda, Uttar Pradesh 210001",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399ccf499ab03bf9:0"
+        },
+        {
+            "index": 5,
+            "name": "VIDYA KRISHNA GYM",
+            "rating": "3.4",
+            "review_count": "12",
+            "category": "Gym",
+            "address": "Road, Bhagwati Nagar, Terahi, Tindwari, Uttar Pradesh 210128",
+            "phone": "",
+            "website": "",
+            "place_id": "0x399cc912f0a052f3:0"
+        },
+        {
+            "index": 6,
+            "name": "Marin Rural Municipality",
+            "rating": "4.0",
+            "review_count": "48",
+            "category": "Government office",
+            "address": "7P7H+FR3, Kalpabrishykha 45900, Nepal",
+            "phone": "+9779846891579",
+            "website": "",
+            "place_id": "0x399cb9f70d535cff:0"
+        },
+        {
+            "index": 7,
+            "name": "Sindhuli Fitness Center",
+            "rating": "5.0",
+            "review_count": "1",
+            "category": "Gym\nClosed",
+            "address": "Kamalamai 45900, Nepal",
+            "phone": "+9779844215226",
+            "website": "",
+            "place_id": "0x39eb859057a4399f:0"
+        },
+        {
+            "index": 8,
+            "name": "Powergym & Fitness Center",
+            "rating": "4.6",
+            "review_count": "37",
+            "category": "Fitness center",
+            "address": "ranibu, Lalitpur, Nepal",
+            "phone": "+9779801824037",
+            "website": "",
+            "place_id": "0x39eb8d00547bbdb5:0"
+        }
+    ]
+}
