@@ -16,7 +16,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const response = await fetch('backend/php/api/get_history.php');
-        const result = await response.json();
+        const rawText = await response.text();
+        console.log('[HISTORY] Raw Backend Response:', rawText);
+        
+        if (!response.ok) {
+            throw new Error(`Server status ${response.status}: ${rawText}`);
+        }
+        
+        let result;
+        try {
+            result = JSON.parse(rawText);
+        } catch (e) {
+            throw new Error(`Invalid JSON syntax from backend. Raw output logged. Error: ${e.message}`);
+        }
 
         if (result.success && result.data.length > 0) {
             renderHistoryTable(result.data, historyContainer);

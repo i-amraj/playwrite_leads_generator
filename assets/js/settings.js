@@ -9,7 +9,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load Settings
     try {
         const response = await fetch('backend/php/api/get_settings.php');
-        const result = await response.json();
+        const rawText = await response.text();
+        console.log('[SETTINGS] Raw Get Response:', rawText);
+        
+        if (!response.ok) {
+            throw new Error(`Server status ${response.status}: ${rawText}`);
+        }
+        
+        let result;
+        try {
+            result = JSON.parse(rawText);
+        } catch (e) {
+            throw new Error(`Invalid JSON syntax from backend. Raw output logged. Error: ${e.message}`);
+        }
 
         if (result.success) {
             populateForm(result.data);
@@ -43,7 +55,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                     body: JSON.stringify(settings)
                 });
 
-                const result = await response.json();
+                const rawText = await response.text();
+                console.log('[SETTINGS] Raw Save Response:', rawText);
+                
+                if (!response.ok) {
+                    throw new Error(`Server status ${response.status}: ${rawText}`);
+                }
+                
+                let result;
+                try {
+                    result = JSON.parse(rawText);
+                } catch (e) {
+                    throw new Error(`Invalid JSON syntax from backend. Raw output logged. Error: ${e.message}`);
+                }
 
                 if (result.success) {
                     showToast('Settings saved successfully', 'success');
