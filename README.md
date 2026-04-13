@@ -19,16 +19,16 @@
 ## 📸 Screenshots
 
 ### 🖥️ Dashboard & Search
-![Main Dashboard Interface](/home/ubuntu_16gb/raj_work_space/python/leades/raj_leadar_generator/assets/screenshots/Screenshot%20from%202026-04-13%2017-13-45.png)
+![Main Dashboard Interface](assets/screenshots/Screenshot%20from%202026-04-13%2017-13-45.png)
 
 ### 📊 extraction Process
-![Live Scraping Terminal](/home/ubuntu_16gb/raj_work_space/python/leades/raj_leadar_generator/assets/screenshots/Screenshot%20from%202026-04-13%2017-12-41.png)
+![Live Scraping Terminal](assets/screenshots/Screenshot%20from%202026-04-13%2017-12-41.png)
 
 ### 📂 Search Results & History
-![Results Table View](/home/ubuntu_16gb/raj_work_space/python/leades/raj_leadar_generator/assets/screenshots/Screenshot%20from%202026-04-13%2017-12-48.png)
+![Results Table View](assets/screenshots/Screenshot%20from%202026-04-13%2017-12-48.png)
 
 ### ⚙️ Minimalist Design
-![Settings and UI Details](/home/ubuntu_16gb/raj_work_space/python/leades/raj_leadar_generator/assets/screenshots/Screenshot%20from%202026-04-13%2017-21-14.png)
+![Settings and UI Details](assets/screenshots/Screenshot%20from%202026-04-13%2017-21-14.png)
 
 ---
 
