@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from datetime import datetime
 
 # Core Modules
@@ -27,7 +28,9 @@ app.add_middleware(
 
 # Directories setup
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), "data")
+# Root directory is two levels up from backend/python/
+ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
+DATA_DIR = os.path.join(ROOT_DIR, "data")
 SESSIONS_DIR = os.path.join(DATA_DIR, "sessions")
 os.makedirs(SESSIONS_DIR, exist_ok=True)
 
@@ -134,6 +137,11 @@ def export_leads(data: List[dict]):
 def health():
     return {"status": "ok"}
 
+# Mount frontend static files
+# This must be at the end to avoid overriding API routes
+app.mount("/", StaticFiles(directory=ROOT_DIR, html=True), name="static")
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    # Change host to 0.0.0.0 to allow access from other devices/tunnels
+    uvicorn.run(app, host="0.0.0.0", port=8000)

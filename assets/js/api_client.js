@@ -2,7 +2,7 @@
  * API Client for LeadGen Pro (Python Version)
  */
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = '/api';
 
 const ApiClient = {
     /**
@@ -44,7 +44,7 @@ const ApiClient = {
     /**
      * Export Leads to Excel
      */
-    async exportLeads(leads) {
+    async exportExcel(leads) {
         try {
             const response = await fetch(`${API_BASE_URL}/export`, {
                 method: 'POST',

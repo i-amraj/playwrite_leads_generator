@@ -13,9 +13,12 @@ env/
 
 # Project specific
 data/*.csv
+data/*.xlsx
 data/*.json
+data/sessions/
 !data/sample_leads_import.csv
-php_server.log
+*_server.log
+backend.log
 testing/screenshots/
 testing/videos/
 

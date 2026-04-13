@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         lastQuery: null,
         settings: { batch_size: 10, delay: 5 },
         startTime: null,
-        timerInterval: null
+        timerInterval: null,
+        leads: [] // Store leads for export
     };
 
     // DOM Elements
@@ -116,11 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('[APP] Initializing...');
 
         try {
-            const settingsResponse = await fetch('backend/php/api/get_settings.php');
-            const settingsResult = await settingsResponse.json();
-            if (settingsResult.success) {
-                state.settings = settingsResult.data;
-            }
+            const settingsResponse = await fetch('/api/health'); // Just check health for now
+            // Settings logic can be expanded here if needed
+            state.settings = { batch_size: 20, delay: 3 }; 
         } catch (e) {
             console.warn('[APP] Failed to load settings, using defaults');
         }
@@ -296,8 +295,9 @@ document.addEventListener('DOMContentLoaded', () => {
         state.lastQuery = params;
 
         // Reset
-        state.extractedCount = 0;
-        state.totalAvailable = 0;
+        state.extractedCount = 0,
+        state.totalAvailable = 0,
+        state.leads = [];
         elements.resultsBody.innerHTML = '';
 
         try {
@@ -337,6 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Render all at once (no slow streaming)
                     if (result.data) {
+                        state.leads = result.data;
                         result.data.forEach((item, i) => {
                             const row = createResultRow(item, i + 1);
                             elements.resultsBody.appendChild(row);
@@ -405,6 +406,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const row = createResultRow(item, i + 1);
             row.classList.add('streaming-row');
             elements.resultsBody.appendChild(row);
+
+            // Store in state
+            state.leads.push(item);
 
             // Log business name
             log(`📍 ${item.name || 'Unknown Business'}`, 'data');
@@ -582,6 +586,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             row.classList.add('streaming-row');
                             elements.resultsBody.appendChild(row);
 
+                            // Store in state
+                            state.leads.push(item);
+
                             // Log business name
                             log(`📍 ${item.name || 'Unknown Business'}`, 'data');
 
@@ -648,7 +655,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 elements.exportBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing...';
                 elements.exportBtn.disabled = true;
 
-                await ApiClient.exportExcel(state.currentSessionId);
+                await ApiClient.exportExcel(state.leads);
                 showToast('Export started successfully', 'success');
             } catch (error) {
                 console.error('[APP] Export error:', error);
